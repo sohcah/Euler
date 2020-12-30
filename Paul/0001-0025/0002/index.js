@@ -1,24 +1,22 @@
 const testMode = process.argv.includes('test');
 const fs = require('fs');
 const input = fs.readFileSync(testMode ? 'test.txt' : 'input.txt', 'utf8').split("\n");
-const multiples = input[0].split(",");
-const lessthan = input[1];
+const seeds = input[0].split(",");
+const max = input[1];
 
-let output = 0;
-let mult = false;
-
-for (let i = 1;i<lessthan;i++) {
-  mult = false;
-  for (const m of multiples) {
-    if (i % m == 0) {
-      mult = true
-    }
-  }
-  if (mult == true) {output += i}
+output = 0;
+let a = Number(seeds[0]);
+let b = Number(seeds[1]);
+let temp = 0;
+while (a<=max) {
+  if (a % 2 == 0) {output += a};
+  temp = b;
+  b = a+b;
+  a = temp;
 }
 
 if(testMode) {
-  if(output !== 37) {
+  if(output !== 44) {
     console.error('\x1b[31mTest Failed - Incorrect Output')
   } else {
     console.log('\x1b[32mTest Succeeded - Correct Output')

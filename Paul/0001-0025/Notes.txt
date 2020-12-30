@@ -1,0 +1,23 @@
+0001 Only brute force
+0002 Only brute force
+0003 Sieves as it goes starting with 2 and odds (3+) up to sqrt of target numbers
+0004 Exhaustive!
+0005 Algorithm avoiding need for prime factorisation!
+0006 Formulaic approach to triangle numbers and sums of squares! (-:
+0007 Sieve method, but crude approach to how big initial set (2 and 3+ odds) should be - might fail for sufficiently large n
+0008 test would fail with start like 8709999 I think! (early zero with maxprod before second zero)
+0009 Only finds first one (if more than one answer); not sure about max possible b.
+0010 Fairly decent, but would fail if result became too big.
+0011
+
+
+
+To do:
+0001v2 clever maths version using lcm's (and lcm's of lcm's ...!) and triangle numbers!
+0002v2 based on Odd Even, Even Odd, Odd Odd or Even Even start, approach based only on calculating evens for any integer start pair?
+0003v2 Only when I've looked into most effective methods for prime set generation!
+0004v2 Work out from largest possible product down so it can stop immediately on success?
+0007v2 number of primes less than n (over-)estimating function?
+0008v2 check for (and deal with) early zero issue!
+0009v2 In cases where there is more than one possible abc combination find them all?
+0010v2 maybe bigint if needed?
