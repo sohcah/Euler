@@ -8,9 +8,20 @@
 0008 test would fail with start like 8709999 I think! (early zero with maxprod before second zero)
 0009 Only finds first one (if more than one answer); not sure about max possible b.
 0010 Fairly decent, but would fail if result became too big.
-0011
-
-
+0011 Nothing available to test it thoroughly, but works!
+0012 Factoring triangle numbers. Brute force but quick!
+0013 I've assumed first 13 digits is enough for 10 digit accuracy?
+0014 Longest Collatz sequence! Trying to be clever failed but brute force v2 succeeded!
+0014v2 brute force succeeded!
+0015 Should work if width and height are different - based on factorials but not evaluating factorials!
+0016 Handles large numbers in 10-digit groups in an array (rather than bigint)
+0017 Just does the maths!
+0018 Done in clever way so 67 should be a doddle!
+0019 Doesn't use input yet but solves specific problem!
+0020 Used BigInt!
+0021 Sum of all amicable numbers under 10000 - relatively well done!
+0022 Names scores - done!
+0023 Non-abundant sums
 
 To do:
 0001v2 clever maths version using lcm's (and lcm's of lcm's ...!) and triangle numbers!
@@ -21,3 +32,10 @@ To do:
 0008v2 check for (and deal with) early zero issue!
 0009v2 In cases where there is more than one possible abc combination find them all?
 0010v2 maybe bigint if needed?
+0011v2 could do it for other than n = 4 and try it on grid reflected in vertical or diagonal to see if it's likely working fully!
+0012v2 is there a fancy approach? or a function to avoid using sqrt?
+0013v2 calculate how many digits is necessary depending on how many numbers in sum
+0016v2
+0017v2 could produce the actual text!
+0019v2 could generalise in lots of ways!!
+0020v2 could try without using BigInt?
