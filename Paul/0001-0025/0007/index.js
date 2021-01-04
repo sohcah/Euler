@@ -17,7 +17,7 @@ i=3;
 while (primes.length<n) {
   if (sieve.has(i)) {
     addon = 2*i;
-    for (let j=i;j<=max;j += addon) {
+    for (let j=i+addon;j<=max;j += addon) {
       sieve.delete(j);
     }
     primes.push(i);

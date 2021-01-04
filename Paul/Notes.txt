@@ -1,3 +1,11 @@
+In progress:
+0043
+0740
+working from 0045 forward
+working from 0741 forward
+working from 0739 backward
+
+
 0001 Only brute force
 0002 Only brute force
 0003 Sieves as it goes starting with 2 and odds (3+) up to sqrt of target numbers
@@ -21,7 +29,13 @@
 0020 Used BigInt!
 0021 Sum of all amicable numbers under 10000 - relatively well done!
 0022 Names scores - done!
-0023 Non-abundant sums
+0023 Non-abundant sums - repurposed factor finding from 0021
+
+0030 Crude and no real thought about i loop (from 2 to 1000000 rather arbitrarily!)
+0031 Ways to make £2. Fairly decent recursive approach!
+0032
+
+0740 need to account for the fact that dipping in and getting own and putting back increases chances of valid possibilities that begin the same way!
 
 To do:
 0001v2 clever maths version using lcm's (and lcm's of lcm's ...!) and triangle numbers!
@@ -39,3 +53,5 @@ To do:
 0017v2 could produce the actual text!
 0019v2 could generalise in lots of ways!!
 0020v2 could try without using BigInt?
+
+0030v2 Much to improve - sensible loop size? better approach (1234 and 4321 and 2413 could all be checked at once?)
