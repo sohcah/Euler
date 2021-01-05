@@ -6,20 +6,15 @@ const primes = [17, 13, 11, 7, 5, 3, 2];
 
 let rem = new Set();
 
-let i = primes[0];
-let digsofar = "";
-
 function prefix(depth) {
   
-  if ((depth == 6)) {
-    if (digsofar.slice(0,2) % 2 == 0) {
-      console.log("answer:" + [...rem][0] + digsofar);
-      return;
-    }
+  if ((depth == 7)) {    
+      //console.log("answer:" + [...rem][0] + digsofar);
+      sum += Number([...rem][0] + digsofar);    
   } else {
     let pmult = primes[depth];
     
-    console.log(depth,digsofar,rem,pmult);
+    //console.log(depth,digsofar,rem,pmult);
     
     while (pmult < 1000) {
       if (
@@ -38,7 +33,9 @@ function prefix(depth) {
   }
 }
 
-
+let i = primes[0];
+let digsofar = "";
+let sum = 0;
 
 while (i < 1000) {
     rem = new Set([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
@@ -53,7 +50,7 @@ while (i < 1000) {
   i += primes[0];
 }
 
-let output = 0;
+let output = sum;
 
 if (testMode) {
   if (output !== 2) {
